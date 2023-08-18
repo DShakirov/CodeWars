@@ -1,0 +1,10 @@
+num = input('Enter a number: ')
+number = list(num)
+print(number)
+cipher = list()
+for numbers in number:
+    cipher.append(int(numbers))
+cipher.sort(reverse=True)
+print(cipher)
+result = int(''.join(map(str, cipher)))
+print(result)
