@@ -6,7 +6,6 @@ def memo_decorator(func):
             for i in range(len(res),n + 1):
                 if i >= len(res):
                     res.append(func(i))
-        print(res)
         return res[n]
     return wrapper
 
