@@ -4,7 +4,7 @@ def is_winner(board, n):
             return True
         if board[0][i] == board[1][i] == board[2][i] == n:
             return True
-        if board[0][0] == board[1][1] == board[2][2] == n:
+    if board[0][0] == board[1][1] == board[2][2] == n:
             return True
     return False    
 
