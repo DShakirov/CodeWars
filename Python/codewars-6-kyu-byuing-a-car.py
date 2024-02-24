@@ -13,7 +13,6 @@ def nb_months(start_price_old, start_price_new, saving_per_month, percent_loss_b
         saving += saving_per_month
         price_of_new_car -= price_of_new_car*(percent_loss_by_month/100)
         price_of_old_car -= price_of_old_car*(percent_loss_by_month/100)
-        print(months, price_of_old_car, price_of_new_car, saving)
         if price_of_old_car + saving >= price_of_new_car:
             charge = round(price_of_old_car + saving - price_of_new_car)
             return [months, charge]
